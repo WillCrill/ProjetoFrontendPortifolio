@@ -3,9 +3,7 @@ import style from "./Header.module.scss"
 function Header () {
 
     return (
-        <div className = {style.navbar} >
-            <img src = "https://www.olympicvideogames.com/sonic/assets/img/copy_photo_image@2x.png" alt = "Sonic" />
-            
+        <div className = {style.navbar} >    
             <div className = {style.navbarMenu} >
                 <div></div>
                 <ul>
