@@ -12,7 +12,6 @@ function App() {
         <Banner/>
         <Main/>
         <Footer/>
-        <Button/>
       </div>
   );
 }
