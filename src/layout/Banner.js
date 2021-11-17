@@ -4,7 +4,7 @@ import eu from "../img/Eu2.png"
 function Banner () {
 
     return (
-        <div className = {style.bannerContainer} >
+        <div id = "banner" className = {style.bannerContainer} >
             <img src = {eu} alt = "William Lima"/>
             <div className = {style.dadosContainer} >
                 <h1>William de Lima Rodrigues</h1>
