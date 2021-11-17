@@ -1,0 +1,88 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+}
+
+.navbar img {
+    height: 70px;
+    margin-left: 10px;
+
+}
+
+.navbarMenu {
+    height: 70px;
+    position: fixed;
+    right: -515px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 63, 134);
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    margin-top: 5px;
+}
+
+
+.navbarMenu div {
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
+    border-radius: 50px;
+    
+    
+
+    animation-name: navbarsignal;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 0;
+}
+
+@keyframes navbarsignal {
+	0% { opacity: 1; } 
+	50% { opacity: .1; } 
+	100% { opacity: 1; }
+}
+
+
+.navbarMenu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items:baseline; 
+}
+
+.navbarMenu ul li {
+    margin: 0px 15px 0px 15px;
+    padding: 15px;
+}
+
+.navbarMenu ul li:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(89, 216, 250);
+    padding: 10px 15px;
+    border-radius: 30px;
+}
+
+.navbarMenu ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbarMenu ul li a:hover {
+    color: black;
+}
+
+.navbarMenu:hover {
+    animation-name: navbarMenuAnimation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+@keyframes navbarMenuAnimation {
+    0% {right: -515px;}
+    100% {right: 0px;}
+}
